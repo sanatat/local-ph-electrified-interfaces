@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this repository and its upstream scientific references separately."
+title: "Local pH gradients at electrified interfaces: independent exploratory computational portfolio"
+authors:
+  - family-names: "Tat"
+    given-names: "Sana"
+version: 0.1.0
+date-released: 2026-10-16

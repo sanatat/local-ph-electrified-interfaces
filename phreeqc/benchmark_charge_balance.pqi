@@ -1,0 +1,77 @@
+TITLE Stage 5: ideal Stage 3 inventories vs PHREEQC thermodynamics -- charge_balance
+# Approximation: mol/m3 numerically equals mmol/L, approximately mmol/kg water in dilute solutions.
+# Na/Cl/Ca/C(4) totals from Stage 3 near-wall cell; no precipitated solids.
+# Fixed-pH deck compares a common numerical pH but need not be charge balanced.
+# Charge-balance deck uses pH charge (pH may change from Stage 3).
+# DO NOT add equilibrium calcite phases, as this would force saturation and modify inventories.
+SELECTED_OUTPUT 1
+    -file results_stage5/phreeqc_charge_balance_selected.tsv
+    -reset false
+    -solution true
+    -high_precision true
+USER_PUNCH 1
+    -headings ph_activity si_calcite ionic_strength ca_free_molkg co3_free_molkg
+    -start
+    10 PUNCH -LA("H+"), SI("Calcite"), MU, MOL("Ca+2"), MOL("CO3-2")
+    -end
+END
+# 1 bulk_reference current=0.0 A/m2 time=0.0 s
+SOLUTION 1 bulk_reference
+    temp 25
+    units mmol/kgw
+    pH 7.50000000000 charge
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# 2 near_cathode_j0 current=0 A/m2 time=180.0 s
+SOLUTION 2 near_cathode_j0
+    temp 25
+    units mmol/kgw
+    pH 7.50000000000 charge
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# 3 near_cathode_j0p15 current=0.15 A/m2 time=180.0 s
+SOLUTION 3 near_cathode_j0p15
+    temp 25
+    units mmol/kgw
+    pH 9.43181851088 charge
+    pe 4
+    Na 11.0944088474
+    Cl 9.79367494639
+    Ca 0.51900901918
+    C(4) 2.07998266483
+    -water 1
+END
+# 4 near_cathode_j0p5 current=0.5 A/m2 time=180.0 s
+SOLUTION 4 near_cathode_j0p5
+    temp 25
+    units mmol/kgw
+    pH 10.21506761607 charge
+    pe 4
+    Na 11.5253563244
+    Cl 9.41930076623
+    Ca 0.556363868369
+    C(4) 2.13002757413
+    -water 1
+END
+# 5 near_cathode_j1p0 current=1.0 A/m2 time=180.0 s
+SOLUTION 5 near_cathode_j1p0
+    temp 25
+    units mmol/kgw
+    pH 10.64174225785 charge
+    pe 4
+    Na 11.9296836663
+    Cl 9.0957225793
+    Ca 0.592473429019
+    C(4) 2.1414050156
+    -water 1
+END

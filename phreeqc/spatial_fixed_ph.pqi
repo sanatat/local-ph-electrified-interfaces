@@ -1,0 +1,1937 @@
+TITLE Stage 6: one-way spatial fixed-pH PHREEQC speciation
+# 160 cells (40 per current); transport inventories in mmol/m3 = mmol/L ≈ mmol/kg water
+# Keep model pH fixed, do NOT impose charge balancing or calcite EQUILIBRIUM_PHASES
+# CaCO3 (aqueous species) is not CaCO3(s) or precipitation.
+SELECTED_OUTPUT 1
+    -file results_stage6/phreeqc_selected.tsv
+    -reset false
+    -solution true
+    -alkalinity true
+    -percent_error true
+    -high_precision true
+USER_PUNCH 1
+    -headings ph_activity si_calcite ionic_strength ca_free_molkg co3_free_molkg caco3_aq_molkg cahco3_aq_molkg caoh_aq_molkg naco3_aq_molkg
+    -start
+    10 PUNCH -LA("H+"), SI("Calcite"), MU, MOL("Ca+2"), MOL("CO3-2"), MOL("CaCO3"), MOL("CaHCO3+"), MOL("CaOH+"), MOL("NaCO3-")
+    -end
+END
+# case current=0 A/m2 x=5.000 um t=180s
+SOLUTION 1 case_1
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=15.000 um t=180s
+SOLUTION 2 case_2
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=25.000 um t=180s
+SOLUTION 3 case_3
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=35.000 um t=180s
+SOLUTION 4 case_4
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=45.000 um t=180s
+SOLUTION 5 case_5
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=55.000 um t=180s
+SOLUTION 6 case_6
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=65.000 um t=180s
+SOLUTION 7 case_7
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=75.000 um t=180s
+SOLUTION 8 case_8
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=85.000 um t=180s
+SOLUTION 9 case_9
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=95.000 um t=180s
+SOLUTION 10 case_10
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=105.000 um t=180s
+SOLUTION 11 case_11
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=115.000 um t=180s
+SOLUTION 12 case_12
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=125.000 um t=180s
+SOLUTION 13 case_13
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=135.000 um t=180s
+SOLUTION 14 case_14
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=145.000 um t=180s
+SOLUTION 15 case_15
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=155.000 um t=180s
+SOLUTION 16 case_16
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=165.000 um t=180s
+SOLUTION 17 case_17
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=175.000 um t=180s
+SOLUTION 18 case_18
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=185.000 um t=180s
+SOLUTION 19 case_19
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=195.000 um t=180s
+SOLUTION 20 case_20
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=205.000 um t=180s
+SOLUTION 21 case_21
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=215.000 um t=180s
+SOLUTION 22 case_22
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=225.000 um t=180s
+SOLUTION 23 case_23
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=235.000 um t=180s
+SOLUTION 24 case_24
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=245.000 um t=180s
+SOLUTION 25 case_25
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=255.000 um t=180s
+SOLUTION 26 case_26
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=265.000 um t=180s
+SOLUTION 27 case_27
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=275.000 um t=180s
+SOLUTION 28 case_28
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=285.000 um t=180s
+SOLUTION 29 case_29
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=295.000 um t=180s
+SOLUTION 30 case_30
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=305.000 um t=180s
+SOLUTION 31 case_31
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=315.000 um t=180s
+SOLUTION 32 case_32
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=325.000 um t=180s
+SOLUTION 33 case_33
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=335.000 um t=180s
+SOLUTION 34 case_34
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=345.000 um t=180s
+SOLUTION 35 case_35
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=355.000 um t=180s
+SOLUTION 36 case_36
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=365.000 um t=180s
+SOLUTION 37 case_37
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=375.000 um t=180s
+SOLUTION 38 case_38
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=385.000 um t=180s
+SOLUTION 39 case_39
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0 A/m2 x=395.000 um t=180s
+SOLUTION 40 case_40
+    temp 25
+    units mmol/kgw
+    pH 7.5
+    pe 4
+    Na 10.8709977058
+    Cl 10
+    Ca 0.5
+    C(4) 2
+    -water 1
+END
+# case current=0.15 A/m2 x=5.000 um t=180s
+SOLUTION 41 case_41
+    temp 25
+    units mmol/kgw
+    pH 9.43181851088
+    pe 4
+    Na 11.0944088474
+    Cl 9.79367494639
+    Ca 0.51900901918
+    C(4) 2.07998266483
+    -water 1
+END
+# case current=0.15 A/m2 x=15.000 um t=180s
+SOLUTION 42 case_42
+    temp 25
+    units mmol/kgw
+    pH 9.41187178529
+    pe 4
+    Na 11.0887382879
+    Cl 9.7986907315
+    Ca 0.518481246245
+    C(4) 2.07899184252
+    -water 1
+END
+# case current=0.15 A/m2 x=25.000 um t=180s
+SOLUTION 43 case_43
+    temp 25
+    units mmol/kgw
+    pH 9.3910980317
+    pe 4
+    Na 11.0830596595
+    Cl 9.80372628556
+    Ca 0.517955624301
+    C(4) 2.07800403333
+    -water 1
+END
+# case current=0.15 A/m2 x=35.000 um t=180s
+SOLUTION 44 case_44
+    temp 25
+    units mmol/kgw
+    pH 9.36942299139
+    pe 4
+    Na 11.077372974
+    Cl 9.80878162772
+    Ca 0.517432143733
+    C(4) 2.07701882099
+    -water 1
+END
+# case current=0.15 A/m2 x=45.000 um t=180s
+SOLUTION 45 case_45
+    temp 25
+    units mmol/kgw
+    pH 9.34676218574
+    pe 4
+    Na 11.0716782358
+    Cl 9.81385677276
+    Ca 0.516910790216
+    C(4) 2.07603569977
+    -water 1
+END
+# case current=0.15 A/m2 x=55.000 um t=180s
+SOLUTION 46 case_46
+    temp 25
+    units mmol/kgw
+    pH 9.3230190254
+    pe 4
+    Na 11.0659754437
+    Cl 9.81895172882
+    Ca 0.51639154498
+    C(4) 2.07505405722
+    -water 1
+END
+# case current=0.15 A/m2 x=65.000 um t=180s
+SOLUTION 47 case_47
+    temp 25
+    units mmol/kgw
+    pH 9.29808248281
+    pe 4
+    Na 11.060264595
+    Cl 9.82406649444
+    Ca 0.515874385152
+    C(4) 2.07407315155
+    -water 1
+END
+# case current=0.15 A/m2 x=75.000 um t=180s
+SOLUTION 48 case_48
+    temp 25
+    units mmol/kgw
+    pH 9.27182421034
+    pe 4
+    Na 11.0545456893
+    Cl 9.82920105454
+    Ca 0.515359284212
+    C(4) 2.07309208171
+    -water 1
+END
+# case current=0.15 A/m2 x=85.000 um t=180s
+SOLUTION 49 case_49
+    temp 25
+    units mmol/kgw
+    pH 9.24409495127
+    pe 4
+    Na 11.0488187353
+    Cl 9.83435537498
+    Ca 0.514846212602
+    C(4) 2.07210974703
+    -water 1
+END
+# case current=0.15 A/m2 x=95.000 um t=180s
+SOLUTION 50 case_50
+    temp 25
+    units mmol/kgw
+    pH 9.21472004828
+    pe 4
+    Na 11.0430837585
+    Cl 9.83952939516
+    Ca 0.514335138539
+    C(4) 2.07112479245
+    -water 1
+END
+# case current=0.15 A/m2 x=105.000 um t=180s
+SOLUTION 51 case_51
+    temp 25
+    units mmol/kgw
+    pH 9.18349380157
+    pe 4
+    Na 11.0373408132
+    Cl 9.84472301774
+    Ca 0.513826029136
+    C(4) 2.07013553282
+    -water 1
+END
+# case current=0.15 A/m2 x=115.000 um t=180s
+SOLUTION 52 case_52
+    temp 25
+    units mmol/kgw
+    pH 9.15017237203
+    pe 4
+    Na 11.0315899982
+    Cl 9.84993609421
+    Ca 0.513318851947
+    C(4) 2.06913984695
+    -water 1
+END
+# case current=0.15 A/m2 x=125.000 um t=180s
+SOLUTION 53 case_53
+    temp 25
+    units mmol/kgw
+    pH 9.11446487811
+    pe 4
+    Na 11.0258314801
+    Cl 9.85516840424
+    Ca 0.512813577156
+    C(4) 2.06813502697
+    -water 1
+END
+# case current=0.15 A/m2 x=135.000 um t=180s
+SOLUTION 54 case_54
+    temp 25
+    units mmol/kgw
+    pH 9.07602233649
+    pe 4
+    Na 11.020065526
+    Cl 9.8604196258
+    Ca 0.512310180703
+    C(4) 2.06711756108
+    -water 1
+END
+# case current=0.15 A/m2 x=145.000 um t=180s
+SOLUTION 55 case_55
+    temp 25
+    units mmol/kgw
+    pH 9.03442424447
+    pe 4
+    Na 11.0142925527
+    Cl 9.86568929123
+    Ca 0.511808648862
+    C(4) 2.0660828156
+    -water 1
+END
+# case current=0.15 A/m2 x=155.000 um t=180s
+SOLUTION 56 case_56
+    temp 25
+    units mmol/kgw
+    pH 8.98916312598
+    pe 4
+    Na 11.0085131987
+    Cl 9.87097672159
+    Ca 0.511308985014
+    C(4) 2.06502456401
+    -water 1
+END
+# case current=0.15 A/m2 x=165.000 um t=180s
+SOLUTION 57 case_57
+    temp 25
+    units mmol/kgw
+    pH 8.93962878854
+    pe 4
+    Na 11.0027284337
+    Cl 9.87628092774
+    Ca 0.510811219811
+    C(4) 2.06393428389
+    -water 1
+END
+# case current=0.15 A/m2 x=175.000 um t=180s
+SOLUTION 58 case_58
+    temp 25
+    units mmol/kgw
+    pH 8.88509751513
+    pe 4
+    Na 10.9969397232
+    Cl 9.88160046091
+    Ca 0.510315426473
+    C(4) 2.06280010953
+    -water 1
+END
+# case current=0.15 A/m2 x=185.000 um t=180s
+SOLUTION 59 case_59
+    temp 25
+    units mmol/kgw
+    pH 8.82473926602
+    pe 4
+    Na 10.9911492731
+    Cl 9.88693318991
+    Ca 0.50982174349
+    C(4) 2.06160530485
+    -water 1
+END
+# case current=0.15 A/m2 x=195.000 um t=180s
+SOLUTION 60 case_60
+    temp 25
+    units mmol/kgw
+    pH 8.75767205175
+    pe 4
+    Na 10.9853603778
+    Cl 9.89227598504
+    Ca 0.509330406738
+    C(4) 2.06032617511
+    -water 1
+END
+# case current=0.15 A/m2 x=205.000 um t=180s
+SOLUTION 61 case_61
+    temp 25
+    units mmol/kgw
+    pH 8.68311988077
+    pe 4
+    Na 10.9795778504
+    Cl 9.89762432407
+    Ca 0.508841789295
+    C(4) 2.05892966378
+    -water 1
+END
+# case current=0.15 A/m2 x=215.000 um t=180s
+SOLUTION 62 case_62
+    temp 25
+    units mmol/kgw
+    pH 8.60075611266
+    pe 4
+    Na 10.9738083804
+    Cl 9.90297196281
+    Ca 0.508356434273
+    C(4) 2.0573718956
+    -water 1
+END
+# case current=0.15 A/m2 x=225.000 um t=180s
+SOLUTION 63 case_63
+    temp 25
+    units mmol/kgw
+    pH 8.51126717617
+    pe 4
+    Na 10.9680603542
+    Cl 9.90831108805
+    Ca 0.507875037922
+    C(4) 2.05560092245
+    -water 1
+END
+# case current=0.15 A/m2 x=235.000 um t=180s
+SOLUTION 64 case_64
+    temp 25
+    units mmol/kgw
+    pH 8.41691059487
+    pe 4
+    Na 10.9623424179
+    Cl 9.91363360908
+    Ca 0.507398316433
+    C(4) 2.05356816525
+    -water 1
+END
+# case current=0.15 A/m2 x=245.000 um t=180s
+SOLUTION 65 case_65
+    temp 25
+    units mmol/kgw
+    pH 8.32143942157
+    pe 4
+    Na 10.956660694
+    Cl 9.91893367764
+    Ca 0.506926748531
+    C(4) 2.05124770822
+    -water 1
+END
+# case current=0.15 A/m2 x=255.000 um t=180s
+SOLUTION 66 case_66
+    temp 25
+    units mmol/kgw
+    pH 8.22897714575
+    pe 4
+    Na 10.9510164008
+    Cl 9.92420985858
+    Ca 0.506460356159
+    C(4) 2.04865003121
+    -water 1
+END
+# case current=0.15 A/m2 x=265.000 um t=180s
+SOLUTION 67 case_67
+    temp 25
+    units mmol/kgw
+    pH 8.14258450666
+    pe 4
+    Na 10.9454060725
+    Cl 9.92946495463
+    Ca 0.505998726157
+    C(4) 2.04581621568
+    -water 1
+END
+# case current=0.15 A/m2 x=275.000 um t=180s
+SOLUTION 68 case_68
+    temp 25
+    units mmol/kgw
+    pH 8.06367340871
+    pe 4
+    Na 10.9398239204
+    Cl 9.93470388556
+    Ca 0.505541229566
+    C(4) 2.04279876801
+    -water 1
+END
+# case current=0.15 A/m2 x=285.000 um t=180s
+SOLUTION 69 case_69
+    temp 25
+    units mmol/kgw
+    pH 7.99234910047
+    pe 4
+    Na 10.9342640792
+    Cl 9.93993165707
+    Ca 0.505087229752
+    C(4) 2.03964575231
+    -water 1
+END
+# case current=0.15 A/m2 x=295.000 um t=180s
+SOLUTION 70 case_70
+    temp 25
+    units mmol/kgw
+    pH 7.92801999229
+    pe 4
+    Na 10.9287216577
+    Cl 9.94515240502
+    Ca 0.504636179496
+    C(4) 2.03639460401
+    -water 1
+END
+# case current=0.15 A/m2 x=305.000 um t=180s
+SOLUTION 71 case_71
+    temp 25
+    units mmol/kgw
+    pH 7.86984813541
+    pe 4
+    Na 10.9231928976
+    Cl 9.95036924653
+    Ca 0.504187635516
+    C(4) 2.033072293
+    -water 1
+END
+# case current=0.15 A/m2 x=315.000 um t=180s
+SOLUTION 72 case_72
+    temp 25
+    units mmol/kgw
+    pH 7.81698465746
+    pe 4
+    Na 10.9176749791
+    Cl 9.95558445156
+    Ca 0.503741240444
+    C(4) 2.02969761861
+    -water 1
+END
+# case current=0.15 A/m2 x=325.000 um t=180s
+SOLUTION 73 case_73
+    temp 25
+    units mmol/kgw
+    pH 7.76866521399
+    pe 4
+    Na 10.9121657715
+    Cl 9.96079966683
+    Ca 0.503296699707
+    C(4) 2.02628355766
+    -water 1
+END
+# case current=0.15 A/m2 x=335.000 um t=180s
+SOLUTION 74 case_74
+    temp 25
+    units mmol/kgw
+    pH 7.72423562307
+    pe 4
+    Na 10.9066636259
+    Cl 9.96601610197
+    Ca 0.502853762434
+    C(4) 2.02283907709
+    -water 1
+END
+# case current=0.15 A/m2 x=345.000 um t=180s
+SOLUTION 75 case_75
+    temp 25
+    units mmol/kgw
+    pH 7.68314816327
+    pe 4
+    Na 10.9011672257
+    Cl 9.9712346646
+    Ca 0.502412207696
+    C(4) 2.01937040207
+    -water 1
+END
+# case current=0.15 A/m2 x=355.000 um t=180s
+SOLUTION 76 case_76
+    temp 25
+    units mmol/kgw
+    pH 7.64494788445
+    pe 4
+    Na 10.8956754834
+    Cl 9.97645605342
+    Ca 0.501971835093
+    C(4) 2.01588187201
+    -water 1
+END
+# case current=0.15 A/m2 x=365.000 um t=180s
+SOLUTION 77 case_77
+    temp 25
+    units mmol/kgw
+    pH 7.60925716278
+    pe 4
+    Na 10.8901874713
+    Cl 9.98168082129
+    Ca 0.501532458446
+    C(4) 2.01237651333
+    -water 1
+END
+# case current=0.15 A/m2 x=375.000 um t=180s
+SOLUTION 78 case_78
+    temp 25
+    units mmol/kgw
+    pH 7.57576158166
+    pe 4
+    Na 10.8847023741
+    Cl 9.98690941802
+    Ca 0.50109390159
+    C(4) 2.00885642469
+    -water 1
+END
+# case current=0.15 A/m2 x=385.000 um t=180s
+SOLUTION 79 case_79
+    temp 25
+    units mmol/kgw
+    pH 7.54419801557
+    pe 4
+    Na 10.8792194576
+    Cl 9.99214221957
+    Ca 0.500655995561
+    C(4) 2.00532303887
+    -water 1
+END
+# case current=0.15 A/m2 x=395.000 um t=180s
+SOLUTION 80 case_80
+    temp 25
+    units mmol/kgw
+    pH 7.51434492564
+    pe 4
+    Na 10.8737380461
+    Cl 9.9973795482
+    Ca 0.500218576728
+    C(4) 2.00177730346
+    -water 1
+END
+# case current=0.5 A/m2 x=5.000 um t=180s
+SOLUTION 81 case_81
+    temp 25
+    units mmol/kgw
+    pH 10.2150676161
+    pe 4
+    Na 11.5253563244
+    Cl 9.41930076623
+    Ca 0.556363868369
+    C(4) 2.13002757413
+    -water 1
+END
+# case current=0.5 A/m2 x=15.000 um t=180s
+SOLUTION 82 case_82
+    temp 25
+    units mmol/kgw
+    pH 10.1992657711
+    pe 4
+    Na 11.5121150316
+    Cl 9.43015391064
+    Ca 0.555094346641
+    C(4) 2.12878769461
+    -water 1
+END
+# case current=0.5 A/m2 x=25.000 um t=180s
+SOLUTION 83 case_83
+    temp 25
+    units mmol/kgw
+    pH 10.1830522962
+    pe 4
+    Na 11.4987174545
+    Cl 9.44117943251
+    Ca 0.553819337885
+    C(4) 2.12752042596
+    -water 1
+END
+# case current=0.5 A/m2 x=35.000 um t=180s
+SOLUTION 84 case_84
+    temp 25
+    units mmol/kgw
+    pH 10.1664039746
+    pe 4
+    Na 11.4851611067
+    Cl 9.45238043054
+    Ca 0.552538602361
+    C(4) 2.12622452255
+    -water 1
+END
+# case current=0.5 A/m2 x=45.000 um t=180s
+SOLUTION 85 case_85
+    temp 25
+    units mmol/kgw
+    pH 10.1492953365
+    pe 4
+    Na 11.4714435065
+    Cl 9.46376001132
+    Ca 0.551251890294
+    C(4) 2.12489868041
+    -water 1
+END
+# case current=0.5 A/m2 x=55.000 um t=180s
+SOLUTION 86 case_86
+    temp 25
+    units mmol/kgw
+    pH 10.1316983676
+    pe 4
+    Na 11.4575621914
+    Cl 9.47532127874
+    Ca 0.549958943333
+    C(4) 2.12354153986
+    -water 1
+END
+# case current=0.5 A/m2 x=65.000 um t=180s
+SOLUTION 87 case_87
+    temp 25
+    units mmol/kgw
+    pH 10.1135821461
+    pe 4
+    Na 11.4435147127
+    Cl 9.48706733849
+    Ca 0.548659494155
+    C(4) 2.12215168309
+    -water 1
+END
+# case current=0.5 A/m2 x=75.000 um t=180s
+SOLUTION 88 case_88
+    temp 25
+    units mmol/kgw
+    pH 10.0949124298
+    pe 4
+    Na 11.4292986423
+    Cl 9.49900129342
+    Ca 0.547353267221
+    C(4) 2.12072763472
+    -water 1
+END
+# case current=0.5 A/m2 x=85.000 um t=180s
+SOLUTION 89 case_89
+    temp 25
+    units mmol/kgw
+    pH 10.0756511629
+    pe 4
+    Na 11.4149115758
+    Cl 9.51112624164
+    Ca 0.546039979207
+    C(4) 2.11926786134
+    -water 1
+END
+# case current=0.5 A/m2 x=95.000 um t=180s
+SOLUTION 90 case_90
+    temp 25
+    units mmol/kgw
+    pH 10.0557558872
+    pe 4
+    Na 11.4003511335
+    Cl 9.5234452766
+    Ca 0.544719339228
+    C(4) 2.11777077022
+    -water 1
+END
+# case current=0.5 A/m2 x=105.000 um t=180s
+SOLUTION 91 case_91
+    temp 25
+    units mmol/kgw
+    pH 10.0351790429
+    pe 4
+    Na 11.3856149658
+    Cl 9.53596148305
+    Ca 0.54339104955
+    C(4) 2.11623470921
+    -water 1
+END
+# case current=0.5 A/m2 x=115.000 um t=180s
+SOLUTION 92 case_92
+    temp 25
+    units mmol/kgw
+    pH 10.0138671186
+    pe 4
+    Na 11.3707007527
+    Cl 9.54867793816
+    Ca 0.542054805728
+    C(4) 2.11465796467
+    -water 1
+END
+# case current=0.5 A/m2 x=125.000 um t=180s
+SOLUTION 93 case_93
+    temp 25
+    units mmol/kgw
+    pH 9.99175962403
+    pe 4
+    Na 11.3556062077
+    Cl 9.56159770938
+    Ca 0.54071029714
+    C(4) 2.11303876003
+    -water 1
+END
+# case current=0.5 A/m2 x=135.000 um t=180s
+SOLUTION 94 case_94
+    temp 25
+    units mmol/kgw
+    pH 9.96878783241
+    pe 4
+    Na 11.3403290793
+    Cl 9.57472385372
+    Ca 0.539357207374
+    C(4) 2.11137525341
+    -water 1
+END
+# case current=0.5 A/m2 x=145.000 um t=180s
+SOLUTION 95 case_95
+    temp 25
+    units mmol/kgw
+    pH 9.94487322759
+    pe 4
+    Na 11.3248671526
+    Cl 9.58805941696
+    Ca 0.537995214643
+    C(4) 2.10966553449
+    -water 1
+END
+# case current=0.5 A/m2 x=155.000 um t=180s
+SOLUTION 96 case_96
+    temp 25
+    units mmol/kgw
+    pH 9.91992557083
+    pe 4
+    Na 11.3092182516
+    Cl 9.60160743319
+    Ca 0.536623992182
+    C(4) 2.10790762025
+    -water 1
+END
+# case current=0.5 A/m2 x=165.000 um t=180s
+SOLUTION 97 case_97
+    temp 25
+    units mmol/kgw
+    pH 9.89384046885
+    pe 4
+    Na 11.2933802399
+    Cl 9.61537092441
+    Ca 0.535243208658
+    C(4) 2.10609944932
+    -water 1
+END
+# case current=0.5 A/m2 x=175.000 um t=180s
+SOLUTION 98 case_98
+    temp 25
+    units mmol/kgw
+    pH 9.86649628156
+    pe 4
+    Na 11.2773510227
+    Cl 9.62935289996
+    Ca 0.533852528615
+    C(4) 2.10423887429
+    -water 1
+END
+# case current=0.5 A/m2 x=185.000 um t=180s
+SOLUTION 99 case_99
+    temp 25
+    units mmol/kgw
+    pH 9.8377501415
+    pe 4
+    Na 11.2611285484
+    Cl 9.64355635614
+    Ca 0.532451612922
+    C(4) 2.10232365118
+    -water 1
+END
+# case current=0.5 A/m2 x=195.000 um t=180s
+SOLUTION 100 case_100
+    temp 25
+    units mmol/kgw
+    pH 9.80743276199
+    pe 4
+    Na 11.2447108101
+    Cl 9.65798427546
+    Ca 0.531040119275
+    C(4) 2.10035142481
+    -water 1
+END
+# case current=0.5 A/m2 x=205.000 um t=180s
+SOLUTION 101 case_101
+    temp 25
+    units mmol/kgw
+    pH 9.77534156428
+    pe 4
+    Na 11.2280958487
+    Cl 9.67263962554
+    Ca 0.529617702755
+    C(4) 2.0983197081
+    -water 1
+END
+# case current=0.5 A/m2 x=215.000 um t=180s
+SOLUTION 102 case_102
+    temp 25
+    units mmol/kgw
+    pH 9.74123142915
+    pe 4
+    Na 11.2112817555
+    Cl 9.68752535692
+    Ca 0.528184016529
+    C(4) 2.09622585257
+    -water 1
+END
+# case current=0.5 A/m2 x=225.000 um t=180s
+SOLUTION 103 case_103
+    temp 25
+    units mmol/kgw
+    pH 9.70480201925
+    pe 4
+    Na 11.1942666784
+    Cl 9.70264439938
+    Ca 0.526738712706
+    C(4) 2.09406700474
+    -water 1
+END
+# case current=0.5 A/m2 x=235.000 um t=180s
+SOLUTION 104 case_104
+    temp 25
+    units mmol/kgw
+    pH 9.66568003469
+    pe 4
+    Na 11.1770488296
+    Cl 9.71799965574
+    Ca 0.525281443493
+    C(4) 2.0918400407
+    -water 1
+END
+# case current=0.5 A/m2 x=245.000 um t=180s
+SOLUTION 105 case_105
+    temp 25
+    units mmol/kgw
+    pH 9.62339378278
+    pe 4
+    Na 11.1596264993
+    Cl 9.73359399073
+    Ca 0.523811862867
+    C(4) 2.0895414646
+    -water 1
+END
+# case current=0.5 A/m2 x=255.000 um t=180s
+SOLUTION 106 case_106
+    temp 25
+    units mmol/kgw
+    pH 9.57733572806
+    pe 4
+    Na 11.1419980782
+    Cl 9.74943021208
+    Ca 0.522329629066
+    C(4) 2.08716724585
+    -water 1
+END
+# case current=0.5 A/m2 x=265.000 um t=180s
+SOLUTION 107 case_107
+    temp 25
+    units mmol/kgw
+    pH 9.52670558807
+    pe 4
+    Na 11.124162096
+    Cl 9.76551103681
+    Ca 0.520834408622
+    C(4) 2.08471254715
+    -water 1
+END
+# case current=0.5 A/m2 x=275.000 um t=180s
+SOLUTION 108 case_108
+    temp 25
+    units mmol/kgw
+    pH 9.47042065584
+    pe 4
+    Na 11.1061172909
+    Cl 9.78183902994
+    Ca 0.519325883221
+    C(4) 2.08217124822
+    -water 1
+END
+# case current=0.5 A/m2 x=285.000 um t=180s
+SOLUTION 109 case_109
+    temp 25
+    units mmol/kgw
+    pH 9.40696830279
+    pe 4
+    Na 11.08786274
+    Cl 9.79841648806
+    Ca 0.517803762227
+    C(4) 2.0795350623
+    -water 1
+END
+# case current=0.5 A/m2 x=295.000 um t=180s
+SOLUTION 110 case_110
+    temp 25
+    units mmol/kgw
+    pH 9.33415088287
+    pe 4
+    Na 11.0693981206
+    Cl 9.815245204
+    Ca 0.516267807355
+    C(4) 2.07679177889
+    -water 1
+END
+# case current=0.5 A/m2 x=305.000 um t=180s
+SOLUTION 111 case_111
+    temp 25
+    units mmol/kgw
+    pH 9.2486179424
+    pe 4
+    Na 11.0507242807
+    Cl 9.83232595182
+    Ca 0.514717885896
+    C(4) 2.07392145241
+    -water 1
+END
+# case current=0.5 A/m2 x=315.000 um t=180s
+SOLUTION 112 case_112
+    temp 25
+    units mmol/kgw
+    pH 9.14495080159
+    pe 4
+    Na 11.0318446247
+    Cl 9.84965723281
+    Ca 0.513154099314
+    C(4) 2.07088718272
+    -water 1
+END
+# case current=0.5 A/m2 x=325.000 um t=180s
+SOLUTION 113 case_113
+    temp 25
+    units mmol/kgw
+    pH 9.01376650843
+    pe 4
+    Na 11.0127689814
+    Cl 9.86723176986
+    Ca 0.511577141315
+    C(4) 2.06760953597
+    -water 1
+END
+# case current=0.5 A/m2 x=335.000 um t=180s
+SOLUTION 114 case_114
+    temp 25
+    units mmol/kgw
+    pH 8.83793771229
+    pe 4
+    Na 10.9935263497
+    Cl 9.88502494298
+    Ca 0.509989476161
+    C(4) 2.06388343753
+    -water 1
+END
+# case current=0.5 A/m2 x=345.000 um t=180s
+SOLUTION 115 case_115
+    temp 25
+    units mmol/kgw
+    pH 8.59048042008
+    pe 4
+    Na 10.9742108479
+    Cl 9.90295300799
+    Ca 0.508399582206
+    C(4) 2.05909068796
+    -water 1
+END
+# case current=0.5 A/m2 x=355.000 um t=180s
+SOLUTION 116 case_116
+    temp 25
+    units mmol/kgw
+    pH 8.27903037786
+    pe 4
+    Na 10.9550612398
+    Cl 9.92080000081
+    Ca 0.506829264096
+    C(4) 2.05181862758
+    -water 1
+END
+# case current=0.5 A/m2 x=365.000 um t=180s
+SOLUTION 117 case_117
+    temp 25
+    units mmol/kgw
+    pH 8.00670852645
+    pe 4
+    Na 10.9362148273
+    Cl 9.93843906341
+    Ca 0.505290821509
+    C(4) 2.04173990914
+    -water 1
+END
+# case current=0.5 A/m2 x=375.000 um t=180s
+SOLUTION 118 case_118
+    temp 25
+    units mmol/kgw
+    pH 7.81035921222
+    pe 4
+    Na 10.9175278015
+    Cl 9.95599794307
+    Ca 0.503770547451
+    C(4) 2.03031335693
+    -water 1
+END
+# case current=0.5 A/m2 x=385.000 um t=180s
+SOLUTION 119 case_119
+    temp 25
+    units mmol/kgw
+    pH 7.66458047942
+    pe 4
+    Na 10.8988997269
+    Cl 9.97356652098
+    Ca 0.502258810142
+    C(4) 2.01836441316
+    -water 1
+END
+# case current=0.5 A/m2 x=395.000 um t=180s
+SOLUTION 120 case_120
+    temp 25
+    units mmol/kgw
+    pH 7.54958486827
+    pe 4
+    Na 10.880295479
+    Cl 9.99117596923
+    Ca 0.50075204194
+    C(4) 2.00616276443
+    -water 1
+END
+# case current=1 A/m2 x=5.000 um t=180s
+SOLUTION 121 case_121
+    temp 25
+    units mmol/kgw
+    pH 10.6417422578
+    pe 4
+    Na 11.9296836663
+    Cl 9.0957225793
+    Ca 0.592473429019
+    C(4) 2.1414050156
+    -water 1
+END
+# case current=1 A/m2 x=15.000 um t=180s
+SOLUTION 122 case_122
+    temp 25
+    units mmol/kgw
+    pH 10.6261529865
+    pe 4
+    Na 11.9134137395
+    Cl 9.10816931465
+    Ca 0.590872112139
+    C(4) 2.14175353164
+    -water 1
+END
+# case current=1 A/m2 x=25.000 um t=180s
+SOLUTION 123 case_123
+    temp 25
+    units mmol/kgw
+    pH 10.6101243535
+    pe 4
+    Na 11.8968276003
+    Cl 9.12091743476
+    Ca 0.589255223358
+    C(4) 2.14205120658
+    -water 1
+END
+# case current=1 A/m2 x=35.000 um t=180s
+SOLUTION 124 case_124
+    temp 25
+    units mmol/kgw
+    pH 10.5936346125
+    pe 4
+    Na 11.8799089301
+    Cl 9.13398173875
+    Ca 0.587621169713
+    C(4) 2.14229324616
+    -water 1
+END
+# case current=1 A/m2 x=45.000 um t=180s
+SOLUTION 125 case_125
+    temp 25
+    units mmol/kgw
+    pH 10.576660381
+    pe 4
+    Na 11.8626407353
+    Cl 9.14737771939
+    Ca 0.58596828151
+    C(4) 2.14247455755
+    -water 1
+END
+# case current=1 A/m2 x=55.000 um t=180s
+SOLUTION 126 case_126
+    temp 25
+    units mmol/kgw
+    pH 10.5591764516
+    pe 4
+    Na 11.845005355
+    Cl 9.16112157459
+    Ca 0.584294814078
+    C(4) 2.14258974204
+    -water 1
+END
+# case current=1 A/m2 x=65.000 um t=180s
+SOLUTION 127 case_127
+    temp 25
+    units mmol/kgw
+    pH 10.5411555706
+    pe 4
+    Na 11.8269844748
+    Cl 9.17523021601
+    Ca 0.582598950085
+    C(4) 2.1426330882
+    -water 1
+END
+# case current=1 A/m2 x=75.000 um t=180s
+SOLUTION 128 case_128
+    temp 25
+    units mmol/kgw
+    pH 10.5225681804
+    pe 4
+    Na 11.8085591486
+    Cl 9.18972127264
+    Ca 0.58087880275
+    C(4) 2.14259856609
+    -water 1
+END
+# case current=1 A/m2 x=85.000 um t=180s
+SOLUTION 129 case_129
+    temp 25
+    units mmol/kgw
+    pH 10.5033821145
+    pe 4
+    Na 11.789709826
+    Cl 9.20461309047
+    Ca 0.579132419725
+    C(4) 2.14247982224
+    -water 1
+END
+# case current=1 A/m2 x=95.000 um t=180s
+SOLUTION 130 case_130
+    temp 25
+    units mmol/kgw
+    pH 10.4835622364
+    pe 4
+    Na 11.7704163888
+    Cl 9.21992472711
+    Ca 0.57735778782
+    C(4) 2.14227017571
+    -water 1
+END
+# case current=1 A/m2 x=105.000 um t=180s
+SOLUTION 131 case_131
+    temp 25
+    units mmol/kgw
+    pH 10.463070009
+    pe 4
+    Na 11.750658195
+    Cl 9.23567594062
+    Ca 0.575552838644
+    C(4) 2.14196261538
+    -water 1
+END
+# case current=1 A/m2 x=115.000 um t=180s
+SOLUTION 132 case_132
+    temp 25
+    units mmol/kgw
+    pH 10.4418629781
+    pe 4
+    Na 11.7304141312
+    Cl 9.25188717306
+    Ca 0.573715455046
+    C(4) 2.14154979821
+    -water 1
+END
+# case current=1 A/m2 x=125.000 um t=180s
+SOLUTION 133 case_133
+    temp 25
+    units mmol/kgw
+    pH 10.4198941499
+    pe 4
+    Na 11.7096626752
+    Cl 9.26857952707
+    Ca 0.571843478607
+    C(4) 2.14102404916
+    -water 1
+END
+# case current=1 A/m2 x=135.000 um t=180s
+SOLUTION 134 case_134
+    temp 25
+    units mmol/kgw
+    pH 10.3971112359
+    pe 4
+    Na 11.6883819666
+    Cl 9.28577473628
+    Ca 0.569934717984
+    C(4) 2.14037736232
+    -water 1
+END
+# case current=1 A/m2 x=145.000 um t=180s
+SOLUTION 135 case_135
+    temp 25
+    units mmol/kgw
+    pH 10.3734557293
+    pe 4
+    Na 11.6665498866
+    Cl 9.30349512918
+    Ca 0.567986958169
+    C(4) 2.13960140339
+    -water 1
+END
+# case current=1 A/m2 x=155.000 um t=180s
+SOLUTION 136 case_136
+    temp 25
+    units mmol/kgw
+    pH 10.3488617706
+    pe 4
+    Na 11.6441441464
+    Cl 9.32176358636
+    Ca 0.565997970605
+    C(4) 2.1386875135
+    -water 1
+END
+# case current=1 A/m2 x=165.000 um t=180s
+SOLUTION 137 case_137
+    temp 25
+    units mmol/kgw
+    pH 10.3232547411
+    pe 4
+    Na 11.6211423838
+    Cl 9.34060349165
+    Ca 0.563965524073
+    C(4) 2.13762671418
+    -water 1
+END
+# case current=1 A/m2 x=175.000 um t=180s
+SOLUTION 138 case_138
+    temp 25
+    units mmol/kgw
+    pH 10.2965495055
+    pe 4
+    Na 11.597522266
+    Cl 9.36003867744
+    Ca 0.561887396252
+    C(4) 2.13640971329
+    -water 1
+END
+# case current=1 A/m2 x=185.000 um t=180s
+SOLUTION 139 case_139
+    temp 25
+    units mmol/kgw
+    pH 10.268648197
+    pe 4
+    Na 11.5732615982
+    Cl 9.38009336531
+    Ca 0.559761385776
+    C(4) 2.13502691145
+    -water 1
+END
+# case current=1 A/m2 x=195.000 um t=180s
+SOLUTION 140 case_140
+    temp 25
+    units mmol/kgw
+    pH 10.2394373971
+    pe 4
+    Na 11.5483384368
+    Cl 9.40079210271
+    Ca 0.557585324658
+    C(4) 2.13346840863
+    -water 1
+END
+# case current=1 A/m2 x=205.000 um t=180s
+SOLUTION 141 case_141
+    temp 25
+    units mmol/kgw
+    pH 10.2087845054
+    pe 4
+    Na 11.5227312034
+    Cl 9.4221596969
+    Ca 0.555357090868
+    C(4) 2.13172401015
+    -water 1
+END
+# case current=1 A/m2 x=215.000 um t=180s
+SOLUTION 142 case_142
+    temp 25
+    units mmol/kgw
+    pH 10.176533008
+    pe 4
+    Na 11.4964187998
+    Cl 9.44422114799
+    Ca 0.553074620834
+    C(4) 2.1297832311
+    -water 1
+END
+# case current=1 A/m2 x=225.000 um t=180s
+SOLUTION 143 case_143
+    temp 25
+    units mmol/kgw
+    pH 10.1424962227
+    pe 4
+    Na 11.4693807198
+    Cl 9.46700158271
+    Ca 0.550735921576
+    C(4) 2.12763529799
+    -water 1
+END
+# case current=1 A/m2 x=235.000 um t=180s
+SOLUTION 144 case_144
+    temp 25
+    units mmol/kgw
+    pH 10.1064489017
+    pe 4
+    Na 11.4415971556
+    Cl 9.49052619044
+    Ca 0.548339082341
+    C(4) 2.12526914578
+    -water 1
+END
+# case current=1 A/m2 x=245.000 um t=180s
+SOLUTION 145 case_145
+    temp 25
+    units mmol/kgw
+    pH 10.0681157495
+    pe 4
+    Na 11.4130490983
+    Cl 9.51482016362
+    Ca 0.545882285386
+    C(4) 2.12267340767
+    -water 1
+END
+# case current=1 A/m2 x=255.000 um t=180s
+SOLUTION 146 case_146
+    temp 25
+    units mmol/kgw
+    pH 10.0271553994
+    pe 4
+    Na 11.3837184264
+    Cl 9.53990864442
+    Ca 0.543363815739
+    C(4) 2.11983639371
+    -water 1
+END
+# case current=1 A/m2 x=265.000 um t=180s
+SOLUTION 147 case_147
+    temp 25
+    units mmol/kgw
+    pH 9.98313751319
+    pe 4
+    Na 11.3535879856
+    Cl 9.56581667858
+    Ca 0.540782069786
+    C(4) 2.11674605164
+    -water 1
+END
+# case current=1 A/m2 x=275.000 um t=180s
+SOLUTION 148 case_148
+    temp 25
+    units mmol/kgw
+    pH 9.93550914259
+    pe 4
+    Na 11.3226416546
+    Cl 9.59256917742
+    Ca 0.538135562612
+    C(4) 2.11338989918
+    -water 1
+END
+# case current=1 A/m2 x=285.000 um t=180s
+SOLUTION 149 case_149
+    temp 25
+    units mmol/kgw
+    pH 9.88354369469
+    pe 4
+    Na 11.2908644001
+    Cl 9.62019088789
+    Ca 0.535422934094
+    C(4) 2.10975490724
+    -water 1
+END
+# case current=1 A/m2 x=295.000 um t=180s
+SOLUTION 150 case_150
+    temp 25
+    units mmol/kgw
+    pH 9.82626049061
+    pe 4
+    Na 11.2582423268
+    Cl 9.64870636486
+    Ca 0.532642954415
+    C(4) 2.10582729606
+    -water 1
+END
+# case current=1 A/m2 x=305.000 um t=180s
+SOLUTION 151 case_151
+    temp 25
+    units mmol/kgw
+    pH 9.76229198707
+    pe 4
+    Na 11.22476273
+    Cl 9.67813993878
+    Ca 0.529794529741
+    C(4) 2.10159216143
+    -water 1
+END
+# case current=1 A/m2 x=315.000 um t=180s
+SOLUTION 152 case_152
+    temp 25
+    units mmol/kgw
+    pH 9.68965186815
+    pe 4
+    Na 11.1904141826
+    Cl 9.7085156512
+    Ca 0.526876710972
+    C(4) 2.09703274621
+    -water 1
+END
+# case current=1 A/m2 x=325.000 um t=180s
+SOLUTION 153 case_153
+    temp 25
+    units mmol/kgw
+    pH 9.60530018164
+    pe 4
+    Na 11.1551867263
+    Cl 9.73985709551
+    Ca 0.523888712059
+    C(4) 2.09212888648
+    -water 1
+END
+# case current=1 A/m2 x=335.000 um t=180s
+SOLUTION 154 case_154
+    temp 25
+    units mmol/kgw
+    pH 9.50424948267
+    pe 4
+    Na 11.1190723751
+    Cl 9.77218697515
+    Ca 0.5208299572
+    C(4) 2.08685327707
+    -water 1
+END
+# case current=1 A/m2 x=345.000 um t=180s
+SOLUTION 155 case_155
+    temp 25
+    units mmol/kgw
+    pH 9.37748697153
+    pe 4
+    Na 11.0820666406
+    Cl 9.80552573734
+    Ca 0.51770022257
+    C(4) 2.08116088553
+    -water 1
+END
+# case current=1 A/m2 x=355.000 um t=180s
+SOLUTION 156 case_156
+    temp 25
+    units mmol/kgw
+    pH 9.20624304195
+    pe 4
+    Na 11.044174232
+    Cl 9.83988642788
+    Ca 0.514500164132
+    C(4) 2.07495073367
+    -water 1
+END
+# case current=1 A/m2 x=365.000 um t=180s
+SOLUTION 157 case_157
+    temp 25
+    units mmol/kgw
+    pH 8.94208491143
+    pe 4
+    Na 11.0054399234
+    Cl 9.8752467346
+    Ca 0.511234173034
+    C(4) 2.0678624001
+    -water 1
+END
+# case current=1 A/m2 x=375.000 um t=180s
+SOLUTION 158 case_158
+    temp 25
+    units mmol/kgw
+    pH 8.44982368816
+    pe 4
+    Na 10.9662354212
+    Cl 9.91128840124
+    Ca 0.507936883387
+    C(4) 2.05746771362
+    -water 1
+END
+# case current=1 A/m2 x=385.000 um t=180s
+SOLUTION 159 case_159
+    temp 25
+    units mmol/kgw
+    pH 7.90529839826
+    pe 4
+    Na 10.9278415002
+    Cl 9.94685635926
+    Ca 0.504726454365
+    C(4) 2.03720161146
+    -water 1
+END
+# case current=1 A/m2 x=395.000 um t=180s
+SOLUTION 160 case_160
+    temp 25
+    units mmol/kgw
+    pH 7.60503541991
+    pe 4
+    Na 10.8899239074
+    Cl 9.98224287
+    Ca 0.50157090432
+    C(4) 2.01265472345
+    -water 1
+END
